@@ -14,6 +14,12 @@ Docker with postgresql:
 - ensures that everyone has the same tables
 
 
+# run application
+
+- cd mvp-start-to-finish
+- npm install
+- npm run dev
+
 # PostgreSQL Docker Image
 
 This repository contains a Dockerfile for a PostgreSQL image with our application's database schema.
