@@ -18,7 +18,7 @@ export default function Home() {
           >
             {' '}
             <Image
-              src="/app-logo-v1-3.png"
+              src="/app-logo-v1-2-2.png"
               alt="Vercel Logo"
               className="dark"
               width={80}

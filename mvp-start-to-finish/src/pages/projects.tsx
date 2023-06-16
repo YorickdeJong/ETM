@@ -6,12 +6,13 @@ import './projects.css';
 
 export default function Projects() {
   const [currentPage, setCurrentPage] = useState(1);
-  const images = ["/lebot/home.png", "/lebot/robotstore.png", "/lebot/login2.png", "/lebot/planets.png", "/lebot/measurements.png"];
+  const imagesLebot = ["/lebot/home.png", "/lebot/robotstore.png", "/lebot/login2.png", "/lebot/planets.png", "/lebot/measurements.png"];
+  const imagesSchoolKlaar = ["/school_klaar/image.png", "/school_klaar/image-2.png", "/school_klaar/image-3.png", "/school_klaar/image-4.png", "/school_klaar/image-5.png"] 
 
   const pages = [
-    { title: 'Learning Bot' },
-    { title: 'Ajax' },
-    { title: 'School Klaar' },
+    { title: 'Learning Bot (App)' },
+    { title: 'School Klaar (App)' },
+    { title: 'Teach and Learn (Website)' },
   ];
 
   const nextPage = () => {
@@ -34,7 +35,7 @@ export default function Projects() {
           <div className='mt-10 flex overflow-x:auto scrollbar-hide' style={{width: '1300px', height: '542px'}}>
             {
                 currentPage == 1 &&
-                    images.map((img, index) => (
+                imagesLebot.map((img, index) => (
                         <div key={index} className='mb-4 rounded-xl border overflow-hidden border-gray-800 mr-4'>
                             <Image
                                 src={img}
@@ -47,10 +48,25 @@ export default function Projects() {
                         </div>
                     ))
             }
+            {
+                currentPage == 2 && 
+                imagesSchoolKlaar.map((img, index) => (
+                        <div key={index} className='mb-4 rounded-xl border overflow-hidden border-gray-800 mr-4'>
+                            <Image
+                                src={img}
+                                alt={"Image " + index}
+                                className="dark"
+                                width={302}
+                                height={600}
+                                priority  
+                            />
+                        </div>
+                    ))
+            }
           </div>
           <div className='mt-10 mr-4'>
-            <button onClick={prevPage} className='mr-5 text-2xl'>Prev</button>
-            <button onClick={nextPage} className='mr-5 text-2xl'>Next</button>
+            {currentPage > 1 && <button onClick={prevPage} className='mr-5 text-2xl'>Prev</button>}
+            {currentPage < 3 && <button onClick={nextPage} className='mr-5 text-2xl'>Next</button>}
           </div>
         </div>
       </main>

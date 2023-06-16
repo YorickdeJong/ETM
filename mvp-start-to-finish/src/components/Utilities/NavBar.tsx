@@ -7,14 +7,14 @@ const NavBar = () => {
   const router = useRouter();
 
   return (
-    <nav className="bg-gradient bg-dark:blue-900">
+    <nav className="bg-gray-950 border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="flex justify-between w-full px-2 lg:px-0">
             <div className="flex-shrink-0 flex">
               {/* Logo can go here */}
               <Image
-                src="/app-logo-v1-3.png"
+                src="/app-logo-v1-2-2.png"
                 alt="Vercel Logo"
                 className="dark"
                 width={55}
