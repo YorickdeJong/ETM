@@ -1,0 +1,64 @@
+.react-calendar {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-color: #1a1f24;
+    line-height: 2.1em;
+}
+  
+.react-calendar__tile {
+    color: #fff;
+    font-size: 18px;
+}
+  
+.react-calendar__tile:hover {
+    background-color: #23272c;
+}
+  
+.react-calendar__tile:active,
+.react-calendar__tile--active {
+    background: #23272c;
+    color: #fff;
+}
+  
+.react-calendar__month-view__days__day--weekend {
+    color: #23272c;
+}
+  
+.react-calendar__month-view__days__day--neighboringMonth {
+    color: #1a1f24;
+    font-size: 20px;
+}
+  
+.react-calendar__navigation {
+    border-bottom: 1px solid #1a1f24;
+}
+  
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+    background-color: #1a1f24;
+    color: #fff;
+}
+  
+.react-calendar__tile--now {
+    background: #1a1f24;
+    color: #fff;
+    font-size: 18px;
+}
+  
+.react-calendar__tile--hasActive {
+    background: #1a1f24;
+    color: #fff;
+}
+  
+.input-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  
+.button-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  
+.image-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

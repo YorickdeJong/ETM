@@ -7,7 +7,7 @@ const NavBar = () => {
   const router = useRouter();
 
   return (
-    <nav className="bg-gray-950 border-b border-gray-800">
+    <nav className="bg-gray-975 border-b border-gray-900">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="flex justify-between w-full px-2 lg:px-0">
@@ -22,14 +22,14 @@ const NavBar = () => {
                 priority
                 />
                 <Link href="/"
-                className={`px-3 py-2 rounded-md text-sm ml-3 font-medium ${router.pathname === "/" ? "text-white" : "text-gray-400 hover:text-white border-opacity-50"}`}>
+                className={`px-3 py-2 mt-1 rounded-md text-sm ml-3 font-medium ${router.pathname === "/" ? "text-white" : "text-gray-400 hover:text-white border-opacity-50"}`}>
                     <h2 className = 'text-2xl'>Home</h2>
                 </Link>
             </div>
                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
  
             <div className="hidden lg:block lg:ml-6">
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 mt-1">
                     <Link href="/projects"
                     className={`px-3 py-2 rounded-md text-sm font-medium ${router.pathname === "/projects" ? " text-white" : "text-gray-400 hover:text-white"}`}>
                         <h2 className = 'text-2xl'>Projecten</h2>

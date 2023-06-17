@@ -27,9 +27,9 @@ export default function Projects() {
     <div>
       <NavBar />
 
-      <main className="flex min-h-screen flex-col items-center justify-between p-12">
-        <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm flex flex-col">
-          <div className= 'mt-4'>
+      <main className="min-h-screen flex-col items-center justify-between w-full">
+        <div className="items-center justify-between font-mono text-sm flex flex-col">
+          <div className= 'mt-10'>
             <h1 className='text-3xl'>{pages[currentPage - 1].title}</h1>
           </div>
           <div className='mt-10 flex overflow-x:auto scrollbar-hide' style={{width: '1300px', height: '542px'}}>
