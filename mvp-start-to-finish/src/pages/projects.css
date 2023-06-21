@@ -28,4 +28,24 @@
   .scrollbar-hide::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
-  
+
+  .header-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #b4b4b4; 
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+  }
+
+.scene{
+    width:100vw;
+    height:100vh;
+}
+
+.canvas{
+    background: #000;
+}
